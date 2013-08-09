@@ -1,0 +1,15 @@
+node_modules
+
+# Ignore Vim tempfiles
+*~
+*.swp
+*.swo
+
+# Ignore ctags
+tags
+
+# Ignore database
+*.db
+
+# Ignore compiled Python
+*.pyc
