@@ -1,8 +1,6 @@
-{% if poll_id %}
-  <p>You're looking at poll {{ poll_id }}.</p>
-{% else %}
-  <p>Missing poll ID</p>
-{% endif %}
-
-{{ poll }}
-
+<h1>{{ poll.question }}</h1>
+<ul>
+{% for choice in poll.choice_set.all %}
+  <li>{{ choice.choice_text }}</li>
+{% endfor %}
+</ul>
