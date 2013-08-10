@@ -3,7 +3,7 @@ from polls.models import Choice
 from polls.models import Poll
 
 
-class ChoiceInline(admin.StackedInline):
+class ChoiceInline(admin.TabularInline):
   model = Choice
   extra = 3
 
