@@ -13,3 +13,6 @@ tags
 
 # Ignore compiled Python
 *.pyc
+
+# Ignore virtualenv environment
+ENV
