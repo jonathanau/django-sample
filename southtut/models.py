@@ -5,3 +5,8 @@ class Knight(models.Model):
   of_the_round_table = models.BooleanField()
   dances_whenever_able = models.BooleanField()
   shrubberies = models.IntegerField(null=False)
+
+
+class Group(models.Model):
+  name = models.TextField(verbose_name="Name")
+  facebook_page__id = models.CharField(max_length=255)
