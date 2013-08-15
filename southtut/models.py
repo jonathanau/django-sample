@@ -8,5 +8,5 @@ class Knight(models.Model):
 
 
 class Group(models.Model):
-  name = models.TextField(verbose_name="Name")
-  facebook_page__id = models.CharField(max_length=255)
+  name = models.CharField(max_length=100, verbose_name="Name")
+  facebook_page_id = models.CharField(max_length=255)

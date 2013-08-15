@@ -11,8 +11,8 @@ class Migration(SchemaMigration):
         # Adding model 'Group'
         db.create_table(u'southtut_group', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('name', self.gf('django.db.models.fields.TextField')()),
-            ('facebook_page__id', self.gf('django.db.models.fields.CharField')(max_length=255)),
+            ('name', self.gf('django.db.models.fields.CharField')(max_length=100)),
+            ('facebook_page_id', self.gf('django.db.models.fields.CharField')(max_length=255)),
         ))
         db.send_create_signal(u'southtut', ['Group'])
 
@@ -25,9 +25,9 @@ class Migration(SchemaMigration):
     models = {
         u'southtut.group': {
             'Meta': {'object_name': 'Group'},
-            'facebook_page__id': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
+            'facebook_page_id': ('django.db.models.fields.CharField', [], {'max_length': '255'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'name': ('django.db.models.fields.TextField', [], {})
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
         u'southtut.knight': {
             'Meta': {'object_name': 'Knight'},
