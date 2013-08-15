@@ -3,7 +3,6 @@ import sha
 
 class User(models.Model):
   username = models.CharField(max_length=255)
-  password = models.CharField(max_length=60)
   password_salt = models.CharField(max_length=8, null=True)
   password_hash = models.CharField(max_length=40, null=True)
   name = models.TextField()
