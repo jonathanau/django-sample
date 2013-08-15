@@ -130,6 +130,7 @@ INSTALLED_APPS = (
     'csvimport',
     'south',
     'southtut',
+    'southtut2',
 )
 
 # A sample logging configuration. The only tangible logging
