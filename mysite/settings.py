@@ -128,6 +128,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'polls',
     'csvimport',
+    'south',
+    'southtut',
 )
 
 # A sample logging configuration. The only tangible logging
